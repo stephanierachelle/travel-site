@@ -591,6 +591,19 @@ display: inline-block;
     }
     }
 
+.wrapper--no-paddding-until-large {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+@media (min-width: 1200px){
+
+.wrapper--no-paddding-until-large {
+        padding-left: 18px;
+        padding-right: 18px
+    }  
+}
+
 .wrapper .wrapper {
       padding-left: 0;
       padding-right: 0;
@@ -629,6 +642,17 @@ display: inline-block;
     }
     }
 
+.page-section--no-b-padding-until-large {
+      padding-bottom: 0;
+    }
+
+@media (min-width: 1200px){
+
+.page-section--no-b-padding-until-large {
+      padding-bottom: 4.5rem
+    }  
+}
+
 .page-section--blue {
       background-color: #2f5572;
       color: #FFF;
@@ -639,14 +663,14 @@ display: inline-block;
       
     }
 
-@media (min-width: 800px){
+@media (min-width: 1200px){
 
 .page-section--testimonials {
         background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
         background-size: cover
       
-    }
-    }
+    }  
+}
 
 .headline {
 font-weight: 300;
@@ -778,6 +802,36 @@ margin-top: 0;
     }
     }
 
+@media (min-width: 1200px){
+
+    .row__b-margin-until-large {
+      margin-bottom: 0;
+    }
+
+    .row__large-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__large-4--larger {
+      width: 37%;
+    }
+    
+    .row__large-6 {
+      float: left;
+      width: 50%;
+    }
+
+    .row__large-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__large-8--smaller {
+      width: 63%;
+    }  
+}
+
 /* Begin Equal Height Rules */
 
 @media (min-width: 800px){
@@ -791,6 +845,23 @@ margin-top: 0;
     }
 
 .row--equal-height-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+@media (min-width: 1200px){
+
+.row--equal-height-at-large {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+
+  }  
+}
+
+.row--equal-height-at-large > div {
       float: none;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -908,13 +979,13 @@ margin-top: 0;
   margin-bottom: 98px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1200px){
 
 .testimonial {
     margin-bottom: 0;  
     padding: 0 1.8125rem 1px 1.8125rem
+}  
 }
-    }
 
 .testimonial--last {
       margin-bottom: 0;
